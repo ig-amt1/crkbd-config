@@ -4,7 +4,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
@@ -172,6 +171,18 @@ UNDEAD_KEY(grave, BR_GRAVE)
         fn {
             bindings = <&mo 4>;
             key-positions = <41 36>;
+            layers = <0>;
+        };
+
+        close {
+            bindings = <&close>;
+            key-positions = <2 3 4>;
+            layers = <0>;
+        };
+
+        info {
+            bindings = <&tog 8>;
+            key-positions = <37 40>;
         };
     };
 
@@ -243,10 +254,19 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         fgame_layer {
             bindings = <
-&kt F5   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &trans  &trans  &trans  &trans  &trans  &trans
-&kp L    &kp L         &kp O         &kp Y         &kp K         &kp G           &trans  &trans  &trans  &trans  &trans  &kp LA(F4)
-&kp F10  &none         &to 0         &none         &kp NUMBER_6  &kp NUMBER_7    &trans  &trans  &trans  &trans  &trans  &to 0
-                                     &kp J         &kp I         &kp M           &trans  &trans  &trans
+&trans  &kp H   &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans  &kp LA(F4)
+&trans  &none   &to 0   &none         &kp O         &kp M           &trans  &trans  &trans  &trans  &trans  &to 0
+                        &kp J         &kp I         &kp M           &trans  &trans  &trans
+            >;
+        };
+
+        infor {
+            bindings = <
+&kp DEL  &trans    &kp UP    &trans     &trans  &trans    &trans     &trans    &kp UP    &trans     &kp F2  &kp DEL
+&trans   &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &kp F4  &kp F12
+&trans   &trans    &trans    &trans     &trans  &trans    &trans     &trans    &trans    &trans     &kp F8  &kp F10
+                             &trans     &trans  &trans    &kp ENTER  &kp BSPC  &trans
             >;
         };
     };
