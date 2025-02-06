@@ -214,7 +214,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: function, h: toggle}
   game:
   - ↹
   - Q
@@ -270,7 +270,7 @@ layers:
   - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Caps Word
   - {t: ▽, type: trans}
   - Page Down
   - $
