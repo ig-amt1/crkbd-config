@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   base:
   - ↹
@@ -37,7 +37,7 @@ layers:
   - .
   - INT1
   - Ctl+MUTE
-  - {t: ↹, h: accent}
+  - {t: CAPSLOCK, h: accent}
   - {t: ESCAPE, h: number}
   - ␣
   - Alt+⏎
