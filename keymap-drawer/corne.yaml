@@ -234,7 +234,7 @@ layers:
   - D
   - F
   - G
-  - VOLUME UP
+  - VOLUME DOWN
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - {t: ▽, type: trans}
@@ -246,7 +246,7 @@ layers:
   - C
   - V
   - B
-  - MUTE
+  - Gui+MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
