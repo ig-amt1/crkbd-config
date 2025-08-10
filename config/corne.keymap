@@ -67,7 +67,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         };
     };
 
-/ {
+
  combos {
         compatible = "zmk,combos";
 
