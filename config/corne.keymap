@@ -381,10 +381,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         base_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
-
 &kp TAB    &kp Q  &kp W       &kp E           &kp R         &kp T        &kp Y    &kp U         &kp I            &kp O       &kp P         &kp C_VOLUME_UP
 &kp LSHFT  &kp A  &hm LALT S  &hm LSHFT D     &hm LCTRL F   &kp G        &kp H    &hm RCTRL J   &hm RSHFT K      &hm RALT L  &kp BR_SEMI   &kp C_VOLUME_DOWN
 &kp LCTRL  &kp Z  &kp X       &kp C           &kp V         &kp B        &kp N    &kp M         &kp COMMA        &kp DOT     &kp BR_SLASH  &kp RC(C_MUTE)
@@ -395,9 +391,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         number_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
 &trans            &kp BR_EXCL   &kp BR_AT    &kp BR_HASH   &kp BR_DLLR  &kp BR_PRCNT    &kp PLUS      &kp N7     &kp N8  &kp N9  &kp BR_BSLH   &trans
 &trans            &kp BR_GRAVE  &kp BR_AMPS  &kp BR_ASTRK  &kp BR_LPAR  &kp BR_RPAR     &kp MINUS     &kp N4     &kp N5  &kp N6  &kp COMMA     &kp LEFT_BRACE
 &kp LEFT_BRACKET  &kp BR_UNDER  &kp BR_LBRC  &kp BR_RBRC   &kp BR_LT    &kp BR_GT       &kp BR_COLON  &kp N1     &kp N2  &kp N3  &kp BR_EQUAL  &kp RIGHT_BRACE
@@ -408,9 +401,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         symbol_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
 &trans        &kp BR_ASTRK  &kp BR_AMPS  &kp BR_LBRC  &kp BR_RBRC  &kp BR_HASH    &kp BR_CIRC   &U_acute  &A_tilde  &O_tilde  &kp BR_CCED  &trans
 &trans        &kp BR_COLON  &kp BR_AT    &kp BR_LPAR  &kp BR_RPAR  &kp BR_DQT     &kp BR_ACUT   &I_acute  &A_acute  &O_acute  &E_acute     &kp F10
 &kp LEFT_ALT  &kp BR_EXCL   &kp PERCENT  &kp BR_LBKT  &kp BR_RBKT  &kp BR_PIPE    &kp BR_TILDE  &E_circ   &A_circ   &O_circ   &A_grave     &kp F20
@@ -421,9 +411,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         accent_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
 &trans  &none      &none    &kp HASH  &kp CARET  &none        &kp CARET  &U_acute  &A_tilde  &O_tilde  &kp BR_CCED  &trans
 &trans  &kp GRAVE  &kp DQT  &kp SQT   &kp EXCL   &kp TILDE    &kp GRAVE  &I_acute  &A_acute  &O_acute  &E_acute     &trans
 &trans  &none      &none    &ac_ccdi  &none      &none        &A_grave   &E_circ   &A_circ   &O_circ   &kp TILDE    &tog 3
@@ -434,9 +421,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         function_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
 &trans      &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &out OUT_TOG    &kp K_SCROLL_UP    &kp F1  &kp F2   &kp F3   &kp F4   &trans
 &trans      &bt BT_CLR      &trans        &trans        &trans        &trans          &kp K_SCROLL_DOWN  &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &sys_reset  &bootloader     &trans        &trans        &trans        &trans          &trans             &kp F9  &kp F10  &kp F11  &kp F12  &trans
@@ -447,9 +431,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         game_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
 &kp TAB         &kp Q  &kp W  &kp E           &kp R         &kp T        &kp C_VOLUME_UP    &trans         &trans          &trans  &trans        &trans
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F         &kp G        &kp C_VOLUME_DOWN  &trans         &kp LEFT_SHIFT  &trans  &trans        &to 0
 &kp LCTRL       &kp Z  &kp X  &kp C           &kp V         &kp B        &kp RG(C_MUTE)     &trans         &trans          &trans  &kp LEFT_GUI  &tog 5
@@ -460,9 +441,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         nav_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
 &trans  &kp PG_UP  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC          &kp C_VOLUME_UP    &trans          &kp UP_ARROW  &trans     &trans    &caps_word
 &trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &trans
 &tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &trans          &trans        &trans     &trans    &trans
@@ -473,9 +451,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         fgame_layer {
             bindings = <
-&kp ESC                         &kp DELETE  
-&kp TAB    &kp LCTRL  &kp UP    &kp RET  
-&kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT 
 &trans  &kp H   &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans        &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans  &kp LA(F4)
 &tog 4  &none   &to 0   &none         &kp O         &kp M           &trans  &trans  &trans  &trans  &trans  &to 0
