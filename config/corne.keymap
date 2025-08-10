@@ -5,10 +5,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-
+#include <dt-bindings/zmk/pointing.h>
 #include "dt-bindings/zmk/pointing.h"
-
-
 
 #define BASE 0
 #define NUME 1
@@ -435,7 +433,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         game_layer {
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E           &kp R         &kp T        &kp C_VOLUME_UP    &trans         &trans          &trans  &trans        &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F         &kp G        &kp C_VOLUME_DOWN  &trans         &kp LEFT_SHIFT  &trans  &trans       &to 0
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F         &kp G        &kp C_VOLUME_DOWN  &trans         &kp LEFT_SHIFT  &trans  &trans        &to 0
 &kp LCTRL       &kp Z  &kp X  &kp C           &kp V         &kp B        &kp RG(C_MUTE)     &trans         &trans          &trans  &kp LEFT_GUI  &tog 5
                               &mt LEFT_ALT M  &lt 7 ESCAPE  &kp SPACE    &trans             &kp RIGHT_WIN  &trans
             >;
@@ -445,7 +443,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
             bindings = <
 &trans  &kp PG_UP  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC          &kp C_VOLUME_UP    &trans          &kp UP_ARROW  &trans     &trans    &caps_word
 &trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &trans
-&tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &trans        &trans       &trans   &trans    &trans
+&tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &trans          &trans        &trans     &trans    &trans
                              &kp LPAR   &kp RPAR   &kp UNDERSCORE    &trans             &trans          &trans
             >;
         };
@@ -459,7 +457,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
             >;
         };
 
-        layer_8 {
+        mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
