@@ -102,7 +102,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
             flavor = "tap-preferred";
         };
     };
-    };
 
     combos {
         compatible = "zmk,combos";
