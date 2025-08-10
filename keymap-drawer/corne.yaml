@@ -43,12 +43,6 @@ layers:
   - RET
   - {t: DELETE, h: symbol}
   - {t: BACKSPACE, h: nav}
-  - F13
-  - F14
-  - F15
-  - F16
-  - F17
-  - F18
   number:
   - {t: ▽, type: trans}
   - Sft+1
@@ -92,12 +86,6 @@ layers:
   - Sft+8
   - '0'
   - {t: number, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   symbol:
   - {t: ▽, type: trans}
   - Sft+8
@@ -141,12 +129,6 @@ layers:
   - ''
   - {type: held}
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   accent:
   - {t: ▽, type: trans}
   - ''
@@ -190,12 +172,6 @@ layers:
   - ENTER
   - BSPC
   - DEL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   function:
   - {t: ▽, type: trans}
   - BT CLR ALL
@@ -239,12 +215,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: function, h: toggle}
-  - F19
-  - F20
-  - F21
-  - F22
-  - F23
-  - F24
   game:
   - TAB
   - Q
@@ -257,7 +227,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
   - LEFT SHIFT
   - A
   - S
@@ -287,12 +257,6 @@ layers:
   - SPACE
   - {t: ▽, type: trans}
   - RIGHT WIN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   nav:
   - {t: ▽, type: trans}
@@ -337,12 +301,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   fgame:
   - {t: ▽, type: trans}
   - H
@@ -383,12 +341,6 @@ layers:
   - J
   - {t: I, type: held}
   - M
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
