@@ -3,3 +3,10 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+steps:
+  - name: Setup ZMK
+    run: |
+      git clone https://github.com/zmkfirmware/zmk.git
+      cd zmk
+      git checkout main  # Usa a versão mais recente
+      git pull
