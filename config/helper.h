@@ -64,6 +64,7 @@
     };
 
 #define UNDEAD_KEY(name, key) \
+// {
     / { \
         macros { \
             name: name { \
@@ -75,4 +76,5 @@
                 bindings = <&kp key &kp SPACE>; \
             }; \
         }; \
+
     };
