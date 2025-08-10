@@ -227,7 +227,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&desktop'
+  - {t: ▽, type: trans}
   - LEFT SHIFT
   - A
   - S
@@ -238,7 +238,7 @@ layers:
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - {t: ▽, type: trans}
-  - '&search'
+  - {t: ▽, type: trans}
   - {t: base, h: toggle}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -282,7 +282,7 @@ layers:
   - ↓
   - →
   - $$mdi:apple-keyboard-command$$
-  - '&desktop'
+  - {t: ▽, type: trans}
   - {t: nav, h: toggle}
   - '~'
   - '!'
@@ -290,11 +290,11 @@ layers:
   - '#'
   - '|'
   - MUTE
-  - '&guileft'
-  - '&gui_up'
-  - '&guiright'
   - {t: ▽, type: trans}
-  - '&search'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - (
   - )
   - _
@@ -344,17 +344,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '8':
+  mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc SCRL_UP'
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - '&mkp RCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -363,10 +363,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc SCRL_DOWN'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -375,8 +371,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -463,4 +463,4 @@ combos:
 - p: [15, 16, 37]
   k: {t: game, h: toggle}
 - p: [14, 13]
-  k: '8'
+  k: mouse
