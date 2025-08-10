@@ -1,0 +1,16 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+        label = "DONGLE";
+
+        default_layer {
+            bindings = <
+                &bootloader &none   &none
+                &kp C_VOL_UP &kp C_MUTE &kp C_VOL_DN
+            >;
+        };
+    };
+};
