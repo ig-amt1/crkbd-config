@@ -30,19 +30,22 @@ jobs:
       - name: Initialize west
         run: west init -l config
         
+      - name: Create output directory
+        run: mkdir -p keymap-drawer
+        
       - name: Draw Corne keymap
         run: |
-          keymap -c config/config_keymap-drawer.yaml draw corne
+          keymap -c config/config_keymap-drawer.yaml draw -o keymap-drawer/corne.svg corne
           
       - name: Draw Dongle keymap
         run: |
-          keymap -c config/config_keymap-drawer.yaml draw dongle
+          keymap -c config/config_keymap-drawer.yaml draw -o keymap-drawer/dongle.svg dongle
           
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update keymap drawings"
-          file_pattern: keymap-drawer/*.svg keymap-drawer/*.yaml
+          file_pattern: keymap-drawer/*.svg
           
       - name: Upload keymap SVGs
         uses: actions/upload-artifact@v4
