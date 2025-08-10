@@ -1,33 +1,44 @@
 ---
 include:
-
-
+    ###   START ###
     # nice_nano_v2 +  
- - board: nice_nano_v2
-   shield: corne_left  
-  cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
-   artifact-name: nice_corne_left_oled
+  - board: nice_nano_v2
+    shield: corne_left  
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
+    artifact-name: nice_corne_left_oled
     snippet: studio-rpc-usb-uart
- - board: nice_nano_v2
+  - board: nice_nano_v2
     shield: corne_right  
     artifact-name: nice_corne_right_oled
+
 
     # peripheral_left + nice_nano_v2 +  
   - board: nice_nano_v2
     shield: corne_left_peripheral  
     artifact-name: nice_corne_left_peripheral_oled
 
+   
+    ### ProMicro_Dongle START ###
     # nice_nano_v2 dongle
   - board: nice_nano_v2
     shield: corne_dongle_pro_micro
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle\"
     artifact-name: nice_corne_dongle_pro_micro
     snippet: studio-rpc-usb-uart
-
+    # snippet: zmk-usb-logging
+  - board: nice_nano_v2
+    shield: corne_dongle_pro_micro dongle_display
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle_O\"
+    artifact-name: nice_corne_dongle_oled
+    snippet: studio-rpc-usb-uart
+ 
+  ### SETTINGS_RESET START ###
   - board: nice_nano_v2
     shield: settings_reset
     artifact-name: nice_settings_reset
   
+
+
 
 
 
