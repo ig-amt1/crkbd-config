@@ -435,7 +435,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         game_layer {
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E           &kp R         &kp T        &kp C_VOLUME_UP    &trans         &trans          &trans  &trans        &trans
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F         &kp G        &kp C_VOLUME_DOWN  &trans         &kp LEFT_SHIFT  &trans  &search       &to 0
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F         &kp G        &kp C_VOLUME_DOWN  &trans         &kp LEFT_SHIFT  &trans  &trans       &to 0
 &kp LCTRL       &kp Z  &kp X  &kp C           &kp V         &kp B        &kp RG(C_MUTE)     &trans         &trans          &trans  &kp LEFT_GUI  &tog 5
                               &mt LEFT_ALT M  &lt 7 ESCAPE  &kp SPACE    &trans             &kp RIGHT_WIN  &trans
             >;
@@ -444,8 +444,8 @@ UNDEAD_KEY(grave, BR_GRAVE)
         nav_layer {
             bindings = <
 &trans  &kp PG_UP  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC          &kp C_VOLUME_UP    &trans          &kp UP_ARROW  &trans     &trans    &caps_word
-&trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &desktop
-&tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &guileft        &gui_up       &guiright  &trans    &search
+&trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &trans
+&tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &guileft        &gui_up       &guiright  &trans    &trans
                              &kp LPAR   &kp RPAR   &kp UNDERSCORE    &trans             &trans          &trans
             >;
         };
