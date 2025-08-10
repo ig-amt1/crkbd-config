@@ -1,88 +1,95 @@
-keymaps:
-  corne:
-    paths:
-      - config/corne.keymap
-    config:
-      - config/corne.conf
-    draw_config:
-      base_filename: corne
-      # Layout físico de 48 teclas (3 linhas + thumbs + linha dongle)
-      layout:
-        - ["_ _ _ _ _ _", "_ _ _ _ _ _"]  # Linha 0: 12 teclas
-        - ["_ _ _ _ _ _", "_ _ _ _ _ _"]  # Linha 1: 12 teclas
-        - ["_ _ _ _ _ _", "_ _ _ _ _ _"]  # Linha 2: 12 teclas
-        - ["\n\n_ _ _", "_ _ _"]           # Thumb cluster: 6 teclas
-        - ["\n\n\n\n_ _ _", "_ _ _"]       # Linha dongle: 6 teclas
-      footer_text: 'Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
-      n_columns: 1
-      key_w: 60.0
-      key_h: 56.0
-      split_gap: 30.0
-      combo_w: 28.0
-      combo_h: 26.0
-      key_rx: 6.0
-      key_ry: 6.0
-      inner_pad_w: 2.0
-      inner_pad_h: 2.0
-      outer_pad_w: 40.0
-      outer_pad_h: 56.0
-      line_spacing: 1.2
-      arc_radius: 6.0
-      append_colon_to_layer_header: true
-      small_pad: 2.0
-      svg_extra_style: |
-        /* For default sytles, see https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L85 */
+# configuration for https://github.com/caksoylar/keymap-drawer
+draw_config:
+  keymaps:
+    corne:
+      paths:
+        - config/corne.keymap
+      config:
+        - config/corne.conf
+      draw_config:
+        base_filename: corne
+        layout:
+          - ["_ _ _ _ _ _", "_ _ _ _ _ _"]  # Linha 0: 12 teclas
+          - ["_ _ _ _ _ _", "_ _ _ _ _ _"]  # Linha 1: 12 teclas
+          - ["_ _ _ _ _ _", "_ _ _ _ _ _"]  # Linha 2: 12 teclas
+          - ["\n\n_ _ _", "_ _ _"]           # Thumb cluster: 6 teclas
+          - ["\n\n\n\n_ _ _", "_ _ _"]       # Linha dongle: 6 teclas
+        combos: config/combos.yaml
 
-        svg.keymap {
-          font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
-          font-size: 16px;
-          font-weight: bold;
-          text-rendering: optimizeLegibility;
-        }
+    dongle:
+      paths:
+        - config/dongle.keymap
+      draw_config:
+        base_filename: dongle
+        layout:
+          - ["_", "_", "_"]  # 3 teclas
+          - ["_", "_", "_"]  # 3 teclas
 
-        /* ... (mantenha o resto do estilo original) ... */
-      shrink_wide_legends: 6
-      glyph_tap_size: 18
-      glyph_hold_size: 15
-      glyph_shifted_size: 15
-      glyphs: {}
-      glyph_urls:
-        tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
-        tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
-        mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
-        mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
-        material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
-      use_local_cache: true
-    parse_config:
-      raw_binding_map:
-        '&sys_reset': Reset
-        '&bootloader': Boot
-        # ... (mantenha todo o conteúdo original de raw_binding_map) ...
-      qmk_keycode_map:
-        XXXXXXX: ''
-        'NO': ''
-        MINUS: '-'
-        # ... (mantenha todo o conteúdo original de qmk_keycode_map) ...
-      zmk_combos:
-        combo_tab:    {align: top, o: 0.15}
-        combo_del:    {align: top, o: 0.15}
-        # ... (mantenha todo o conteúdo original de zmk_combos) ...
-      zmk_keycode_map:
-        C_VOL_UP: Vol Up
-        C_VOL_DN: Vol Down
-        # ... (mantenha todo o conteúdo original de zmk_keycode_map) ...
+  # Configurações gerais
+  footer_text: 'Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
+  n_columns: 1
+  key_w: 60.0
+  key_h: 56.0
+  split_gap: 30.0
+  combo_w: 28.0
+  combo_h: 26.0
+  key_rx: 6.0
+  key_ry: 6.0
+  inner_pad_w: 2.0
+  inner_pad_h: 2.0
+  outer_pad_w: 40.0
+  outer_pad_h: 56.0
+  line_spacing: 1.2
+  arc_radius: 6.0
+  append_colon_to_layer_header: true
+  small_pad: 2.0
+  svg_extra_style: |
+    /* For default sytles, see https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L85 */
 
-  dongle:
-    paths:
-      - config/dongle.keymap
-    draw_config:
-      base_filename: dongle
-      layout:
-        - ["_", "_", "_"]  # Layout para o dongle
-        - ["_", "_", "_"]
-      # Copie as mesmas configurações visuais do corne
-      footer_text: 'Keymap View: <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
-      n_columns: 1
-      key_w: 60.0
-      key_h: 56.0
-      # ... (outras configurações visuais) ...
+    svg.keymap {
+      font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
+      font-size: 16px;
+      font-weight: bold;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* ... (mantenha todo o conteúdo original) ... */
+  shrink_wide_legends: 6
+  glyph_tap_size: 18
+  glyph_hold_size: 15
+  glyph_shifted_size: 15
+  glyphs: {}
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true
+
+parse_config:
+  raw_binding_map:
+    '&sys_reset': Reset
+    '&bootloader': Boot
+    '&swapper': Win Next
+    '&caps_word': Caps Word
+    '&inv_qm': ¿
+
+    # ... (mantenha todo o conteúdo original) ...
+
+  qmk_keycode_map:
+    XXXXXXX: ''
+    'NO': ''
+    MINUS: '-'
+    MINS: '-'
+    # ... (mantenha todo o conteúdo original) ...
+
+  zmk_combos:
+    combo_tab:    {align: top, o: 0.15}
+    combo_del:    {align: top, o: 0.15}
+    # ... (mantenha todo o conteúdo original) ...
+
+  zmk_keycode_map:
+    C_VOL_UP: Vol Up
+    C_VOL_DN: Vol Down
+    # ... (mantenha todo o conteúdo original) ...

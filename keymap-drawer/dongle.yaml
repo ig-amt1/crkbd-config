@@ -1,0 +1,3 @@
+layout: {zmk_keyboard: dongle}
+layers:
+  default: [Boot, '', '', Vol Up, MUTE, Vol Down]

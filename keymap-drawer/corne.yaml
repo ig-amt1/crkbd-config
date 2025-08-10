@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   base:
-  - ↹
+  - TAB
   - Q
   - W
   - E
@@ -13,19 +13,19 @@ layers:
   - O
   - P
   - VOLUME UP
-  - $$mdi:apple-keyboard-shift$$
+  - LSHFT
   - A
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: LALT}
+  - {t: D, h: LSHFT}
+  - {t: F, h: LCTRL}
   - G
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - /
+  - {t: J, h: RCTRL}
+  - {t: K, h: RSHFT}
+  - {t: L, h: RALT}
+  - SLASH
   - VOLUME DOWN
-  - $$mdi:apple-keyboard-control$$
+  - LCTRL
   - Z
   - X
   - C
@@ -33,14 +33,14 @@ layers:
   - B
   - N
   - M
-  - ','
-  - .
+  - COMMA
+  - DOT
   - INT1
   - Ctl+MUTE
   - {t: CAPSLOCK, h: accent}
   - {t: ESCAPE, h: number}
-  - ␣
-  - ⏎
+  - SPACE
+  - RET
   - {t: DELETE, h: symbol}
   - {t: BACKSPACE, h: nav}
   - F13
@@ -56,36 +56,36 @@ layers:
   - Sft+3
   - Sft+4
   - Sft+5
-  - +
+  - PLUS
   - '7'
   - '8'
   - '9'
   - NUBS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+[
+  - Sft+LBKT
   - Sft+7
   - Sft+8
   - Sft+9
   - Sft+0
-  - '-'
+  - MINUS
   - '4'
   - '5'
   - '6'
-  - ','
-  - '{'
-  - '['
-  - Sft+-
-  - Sft+]
-  - Sft+\
-  - Sft+,
-  - Sft+.
-  - Sft+/
+  - COMMA
+  - LEFT BRACE
+  - LEFT BRACKET
+  - Sft+MINUS
+  - Sft+RBKT
+  - Sft+BSLH
+  - Sft+COMMA
+  - Sft+DOT
+  - Sft+SLASH
   - '1'
   - '2'
   - '3'
-  - '='
-  - '}'
+  - EQUAL
+  - RIGHT BRACE
   - ''
   - {type: held}
   - ''
@@ -102,22 +102,22 @@ layers:
   - {t: ▽, type: trans}
   - Sft+8
   - Sft+7
-  - Sft+]
-  - Sft+\
+  - Sft+RBKT
+  - Sft+BSLH
   - Sft+3
-  - Sft+'
+  - Sft+SQT
   - {t: '&U_acute_down', s: '&U_acute_up'}
   - {t: '&A_tilde_down', s: '&A_tilde_up'}
   - {t: '&O_tilde_down', s: '&O_tilde_up'}
-  - ;
+  - SEMI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+/
+  - Sft+SLASH
   - Sft+2
   - Sft+9
   - Sft+0
-  - Sft+`
-  - '['
+  - Sft+GRAVE
+  - LBKT
   - {t: '&I_acute_down', s: '&I_acute_up'}
   - {t: '&A_acute_down', s: '&A_acute_up'}
   - {t: '&O_acute_down', s: '&O_acute_up'}
@@ -125,11 +125,11 @@ layers:
   - F10
   - LEFT ALT
   - Sft+1
-  - '%'
-  - ']'
-  - \
+  - PERCENT
+  - RBKT
+  - BSLH
   - Sft+NUBS
-  - ''''
+  - SQT
   - {t: '&E_circ_down', s: '&E_circ_up'}
   - {t: '&A_circ_down', s: '&A_circ_up'}
   - {t: '&O_circ_down', s: '&O_circ_up'}
@@ -151,22 +151,22 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - '#'
-  - ^
+  - HASH
+  - CARET
   - ''
-  - ^
+  - CARET
   - {t: '&U_acute_down', s: '&U_acute_up'}
   - {t: '&A_tilde_down', s: '&A_tilde_up'}
   - {t: '&O_tilde_down', s: '&O_tilde_up'}
-  - ;
+  - SEMI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '`'
-  - '"'
-  - ''''
-  - '!'
-  - '~'
-  - '`'
+  - GRAVE
+  - DQT
+  - SQT
+  - EXCL
+  - TILDE
+  - GRAVE
   - {t: '&I_acute_down', s: '&I_acute_up'}
   - {t: '&A_acute_down', s: '&A_acute_up'}
   - {t: '&O_acute_down', s: '&O_acute_up'}
@@ -182,14 +182,14 @@ layers:
   - {t: '&E_circ_down', s: '&E_circ_up'}
   - {t: '&A_circ_down', s: '&A_circ_up'}
   - {t: '&O_circ_down', s: '&O_circ_up'}
-  - '~'
+  - TILDE
   - {t: accent, h: toggle}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - $$mdi:backspace-outline$$
-  - ⌦
+  - BSPC
+  - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -199,9 +199,9 @@ layers:
   function:
   - {t: ▽, type: trans}
   - BT CLR ALL
-  - BT 1
-  - BT 2
-  - BT 3
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
   - OUT TOG
   - SCROLL UP
   - F1
@@ -246,7 +246,7 @@ layers:
   - F23
   - F24
   game:
-  - ↹
+  - TAB
   - Q
   - W
   - E
@@ -270,7 +270,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: base, h: toggle}
-  - $$mdi:apple-keyboard-control$$
+  - LCTRL
   - Z
   - X
   - C
@@ -284,7 +284,7 @@ layers:
   - {t: game, h: toggle}
   - {t: M, h: LEFT ALT}
   - {t: ESCAPE, h: fgame}
-  - ␣
+  - SPACE
   - {t: ▽, type: trans}
   - RIGHT WIN
   - {t: ▽, type: trans}
@@ -296,11 +296,11 @@ layers:
   - {t: ▽, type: trans}
   nav:
   - {t: ▽, type: trans}
-  - Page Up
+  - PG UP
   - AMPS
-  - '*'
-  - (
-  - '}'
+  - ASTRK
+  - LPAR
+  - RBRC
   - VOLUME UP
   - {t: ▽, type: trans}
   - UP ARROW
@@ -308,32 +308,32 @@ layers:
   - {t: ▽, type: trans}
   - Caps Word
   - {t: ▽, type: trans}
-  - Page Down
-  - $
-  - '%'
-  - ^
-  - +
+  - PG DN
+  - DLLR
+  - PRCNT
+  - CARET
+  - PLUS
   - VOLUME DOWN
   - LEFT ARROW
-  - ↓
-  - →
-  - $$mdi:apple-keyboard-command$$
+  - DOWN
+  - RIGHT
+  - LGUI
   - {t: ▽, type: trans}
   - {t: nav, h: toggle}
-  - '~'
-  - '!'
-  - '@'
-  - '#'
-  - '|'
+  - TILDE
+  - EXCL
+  - AT
+  - HASH
+  - PIPE
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - (
-  - )
-  - _
+  - LPAR
+  - RPAR
+  - UNDERSCORE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -367,7 +367,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Win Close
+  - Alt+F4
   - {t: function, h: toggle}
   - ''
   - {t: base, h: toggle}
@@ -406,7 +406,7 @@ combos:
   k: Caps Word
   l: [base]
 - p: [1, 0]
-  k: Esc
+  k: ESC
   l: [base]
 - p: [33, 32, 31]
   k: Sft+INT1
@@ -454,16 +454,16 @@ combos:
   k: {t: fgame, h: toggle}
   l: [base]
 - p: [7, 6]
-  k: Sft+'
+  k: Sft+SQT
   l: [base]
 - p: [18, 19]
-  k: '['
+  k: LBKT
   l: [base]
 - p: [31, 30]
-  k: ''''
+  k: SQT
   l: [base]
 - p: [32, 31, 30]
-  k: Sft+[
+  k: Sft+LBKT
   l: [base]
 - p: [15, 16, 37]
   k: {t: game, h: toggle}
