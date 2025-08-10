@@ -6,7 +6,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-
 #define BASE 0
 #define NUME 1
 #define SYMB 2
@@ -15,7 +14,6 @@
 #define NAVI 5
 #define FGAM 6
 #define ACCE 7
-
 
 AC_KEY(A_acute, BR_A, BR_ACUT)
 AC_KEY(A_grave, BR_A, BR_GRAVE)
@@ -269,12 +267,6 @@ UNDEAD_KEY(grave, BR_GRAVE)
             key-positions = <15 16 37>;
             layers = <0>;
         };
-
-        mouse {
-            bindings = <&mo 8>;
-            key-positions = <14 13>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -458,6 +450,5 @@ UNDEAD_KEY(grave, BR_GRAVE)
                         &kp J         &kp I         &kp M           &trans  &trans  &trans
             >;
         };
-
     };
 };
