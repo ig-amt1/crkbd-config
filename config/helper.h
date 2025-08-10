@@ -65,7 +65,7 @@
 
 #define UNDEAD_KEY(name, key) \
 // {
-    / { \
+    
         macros { \
             name: name { \
                 compatible = "zmk,behavior-macro"; \
@@ -78,3 +78,4 @@
         }; \
 
     };
+
