@@ -329,11 +329,9 @@ rect.held, rect.combo.held {
 <g transform="translate(812, 105)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">Vol</tspan><tspan x="0" dy="1.2em">Down</tspan>
+<tspan x="0" dy="-0.6em">VOLUME</tspan><tspan x="0" dy="1.2em">DOWN</tspan>
 </text>
-<a href="#function">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 75%">function</tspan></text>
-</a></g>
+</g>
 <g transform="translate(28, 161)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-9" y="-9" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-control"/>
@@ -420,7 +418,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
 <a href="#function">
 <text x="224" y="88" class="combo tap layer-activator"><tspan style="font-size: 75%">function</tspan></text>
-</a></g>
+</a><text x="224" y="98" class="combo hold">toggle</text>
+</g>
 <g class="combo combopos-1">
 <path d="M812,105 l0,-37" class="combo"/>
 <path d="M812,105 l0,37" class="combo"/>
@@ -1125,8 +1124,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">F8</text>
 </g>
-<g transform="translate(812, 105)" class="key held keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(812, 105)" class="key trans keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(28, 161)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1176,9 +1176,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(224, 205)" class="key trans keypos-36">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(224, 205)" class="key held keypos-36">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(286, 213) rotate(15.0)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1196,11 +1195,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(616, 205)" class="key keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(616, 205)" class="key held keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <a href="#function">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 75%">function</tspan></text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key held tap layer-activator"><tspan style="font-size: 75%">function</tspan></text>
+</a><text x="0" y="24" class="key held hold">toggle</text>
 </g>
 <g class="combo combopos-0">
 <path d="M420,213 l-116,0" class="combo"/>
@@ -1377,7 +1376,8 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(224, 205)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Alt+M</text>
+<text x="0" y="0" class="key tap">M</text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 75%">LEFT ALT</tspan></text>
 </g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1708,9 +1708,11 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em">Win</tspan><tspan x="0" dy="1.2em">Close</tspan>
 </text>
 </g>
-<g transform="translate(28, 161)" class="key trans keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(28, 161)" class="key keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<a href="#function">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 75%">function</tspan></text>
+</a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

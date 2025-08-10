@@ -24,7 +24,7 @@ layers:
   - K
   - L
   - /
-  - {t: Vol Down, h: function}
+  - VOLUME DOWN
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -196,7 +196,7 @@ layers:
   - F6
   - F7
   - F8
-  - {type: held}
+  - {t: ▽, type: trans}
   - Reset
   - Boot
   - {t: ▽, type: trans}
@@ -209,12 +209,12 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: function, h: toggle}
+  - {t: function, h: toggle, type: held}
   game:
   - ↹
   - Q
@@ -252,7 +252,7 @@ layers:
   - {t: ▽, type: trans}
   - LEFT GUI
   - {t: base, h: toggle}
-  - Alt+M
+  - {t: M, h: LEFT ALT}
   - {t: ESCAPE, h: fgame}
   - ␣
   - {t: ▽, type: trans}
@@ -326,7 +326,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Win Close
-  - {t: ▽, type: trans}
+  - {t: function, h: toggle}
   - ''
   - {t: base, h: toggle}
   - ''
@@ -389,7 +389,7 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [15, 16]
-  k: function
+  k: {t: function, h: toggle}
   l: [base]
 - p: [11, 23, 35]
   k: {t: game, h: toggle}
