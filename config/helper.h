@@ -64,8 +64,7 @@
     };
 
 #define UNDEAD_KEY(name, key) \
-// {
-    
+    / { \
         macros { \
             name: name { \
                 compatible = "zmk,behavior-macro"; \
@@ -76,6 +75,4 @@
                 bindings = <&kp key &kp SPACE>; \
             }; \
         }; \
-
     };
-
