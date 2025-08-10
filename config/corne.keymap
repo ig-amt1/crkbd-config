@@ -54,6 +54,19 @@ UNDEAD_KEY(grave, BR_GRAVE)
     quick-release;
 };
 
+
+/ {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <TAPPING_TERM>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
 / {
  combos {
         compatible = "zmk,combos";
