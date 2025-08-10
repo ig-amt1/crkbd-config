@@ -434,7 +434,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         game_layer {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E           &kp R         &kp T        &kp C_VOLUME_UP    &trans         &trans          &trans  &trans        &desktop
+&kp TAB         &kp Q  &kp W  &kp E           &kp R         &kp T        &kp C_VOLUME_UP    &trans         &trans          &trans  &trans        &trans
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D           &kp F         &kp G        &kp C_VOLUME_DOWN  &trans         &kp LEFT_SHIFT  &trans  &search       &to 0
 &kp LCTRL       &kp Z  &kp X  &kp C           &kp V         &kp B        &kp RG(C_MUTE)     &trans         &trans          &trans  &kp LEFT_GUI  &tog 5
                               &mt LEFT_ALT M  &lt 7 ESCAPE  &kp SPACE    &trans             &kp RIGHT_WIN  &trans
