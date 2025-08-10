@@ -458,7 +458,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
             >;
         };
 
-        mouse {
+        mouse_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP    &mkp RCLK        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
