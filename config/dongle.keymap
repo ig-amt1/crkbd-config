@@ -1,16 +1,31 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/macro.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
-        label = "DONGLE";
+        label = "DONGLE_MACROPAD";
 
         default_layer {
             bindings = <
-                &bootloader &none   &none
-                &kp C_VOL_UP &kp C_MUTE &kp C_VOL_DN
+                &macro_tap &kp LC(ESC)   // Botão 1
+                &macro_tap &kp LG(L)     // Botão 2
+                &macro_tap &kp LG(D)     // Botão 3
             >;
+        };
+    };
+
+    macros {
+        // Exemplo de macro complexa:
+        hello_macro: hello_macro {
+            label = "HELLO_MACRO";
+            wait-ms = <10>;
+            tap-ms = <5>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp A>
+                , <&macro_release &kp LCTRL>
+                , <&macro_tap &kp H &kp E &kp L &kp L &kp O>;
         };
     };
 };
