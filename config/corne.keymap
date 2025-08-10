@@ -55,6 +55,184 @@ UNDEAD_KEY(grave, BR_GRAVE)
 };
 
 / {
+ combos {
+        compatible = "zmk,combos";
+
+        // combo_esc {
+        //timeout-ms = <50>;
+        //key-positions = <13 16>;
+        //  bindings = <&caps_word>;
+        //  };
+
+        game {
+            timeout-ms = <50>;
+            bindings = <&tog 4>;
+            key-positions = <34 13 12>;
+            layers = <0>;
+        };
+
+        close {
+            timeout-ms = <50>;
+            bindings = <&close>;
+            key-positions = <0 1 2 3>;
+            layers = <0>;
+        };
+
+        prtsc_combo {
+            timeout-ms = <50>;
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <5 4>;
+            layers = <0>;
+        };
+
+        caps {
+            timeout-ms = <50>;
+            bindings = <&caps_word>;
+            key-positions = <22 23 24 21>;
+            layers = <0>;
+        };
+
+        esc {
+            timeout-ms = <50>;
+            bindings = <&kp ESC>;
+            key-positions = <11 12 13>;
+            layers = <0>;
+        };
+
+        del {
+            timeout-ms = <50>;
+            bindings = <&kp DEL>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        quest {
+            bindings = <&kp BR_QMARK>;
+            key-positions = <29 28 27>;
+            layers = <0>;
+        };
+
+        lgui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        rgui {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <19 18>;
+            layers = <0>;
+        };
+
+        lock {
+            bindings = <&lock>;
+            key-positions = <6 7 8>;
+            layers = <5>;
+        };
+
+        copy {
+            bindings = <&copy>;
+            key-positions = <23 22>;
+            layers = <0>;
+        };
+
+        paste {
+            bindings = <&paste>;
+            key-positions = <23 24>;
+            layers = <0>;
+        };
+
+        n1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <0 10>;
+            layers = <0>;
+        };
+
+        n2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <1 11>;
+            layers = <0>;
+        };
+
+        n3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <2 12>;
+            layers = <0>;
+        };
+
+        n4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <3 13>;
+            layers = <0>;
+        };
+
+        n5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <4 14>;
+            layers = <0>;
+        };
+
+        n6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <5 15>;
+            layers = <0>;
+        };
+
+        n7 {
+            bindings = <&kp NUMBER_7>;
+            key-positions = <6 16>;
+            layers = <0>;
+        };
+
+        n8 {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <7 17>;
+            layers = <0>;
+        };
+
+        n9 {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <8 18>;
+            layers = <0>;
+        };
+
+        n0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <9 19>;
+            layers = <0>;
+        };
+
+        tec {
+            bindings = <&tog 7>;
+            key-positions = <33 36>;
+            layers = <0>;
+        };
+
+        circ {
+            bindings = <&kp BR_CIRC>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        agud {
+            bindings = <&kp BR_ACUT>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
+
+        til {
+            bindings = <&kp BR_TILDE>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        grave {
+            bindings = <&kp BR_GRAVE>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+    };
+
     macros {
         close: close {
             compatible = "zmk,behavior-macro";
@@ -69,9 +247,20 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp LALT>;
         };
 
-        guileft: guileft {
+        cao: cao {
             compatible = "zmk,behavior-macro";
-            label = "GUILEFT";
+            label = "CAO";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp BR_CCED>,
+                <&macro_tap_time 20>,
+                <&A_tilde>;
+        };
+
+        guilt: guilt {
+            compatible = "zmk,behavior-macro";
+            label = "GUILT";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -82,9 +271,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
                 <&kp LEFT_GUI>;
         };
 
-        guiright: guiright {
+        guirt: guirt {
             compatible = "zmk,behavior-macro";
-            label = "GUIRIGHT";
+            label = "GUIRT";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -122,69 +311,34 @@ UNDEAD_KEY(grave, BR_GRAVE)
             label = "GUI_UP";
         };
 
-        desktop: desktop {
+        copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_GUI>,
+                <&kp LEFT_CONTROL>,
                 <&macro_tap>,
-                <&kp D>,
+                <&kp C>,
                 <&macro_release>,
-                <&kp LEFT_GUI>;
+                <&kp LEFT_CONTROL>;
 
-            label = "DESKTOP";
+            label = "COPY";
         };
 
-        search: search {
+        paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LALT>,
+                <&kp LEFT_CONTROL>,
                 <&macro_tap>,
-                <&kp SPACE>,
+                <&kp V>,
                 <&macro_release>,
-                <&kp LALT>;
+                <&kp LEFT_CONTROL>;
 
-            label = "SEARCH";
+            label = "PASTE";
         };
-    };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-
-        funcion {
-            bindings = <&tog 4>;
-            key-positions = <15 16>;
-            layers = <0>;
-        };
-
-        game {
-            bindings = <&tog 5>;
-            key-positions = <11 23 35>;
-            layers = <0>;
-        };
-
-        fn {
-            bindings = <&mo 4>;
-            key-positions = <41 36>;
-            layers = <0>;
-        };
-
-        close {
-            bindings = <&close>;
-            key-positions = <2 3 4>;
-            layers = <0>;
-        };
-
-        info {
-            bindings = <&tog 8>;
-            key-positions = <37 40>;
-        };
-    };
+     };
 
     keymap {
         compatible = "zmk,keymap";
@@ -192,7 +346,7 @@ UNDEAD_KEY(grave, BR_GRAVE)
         base_layer {
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E           &kp R         &kp T        &kp Y    &kp U         &kp I            &kp O    &kp P         &kp C_VOLUME_UP
-&kp LSHFT  &kp A  &kp S  &kp D           &kp F         &kp G        &kp H    &kp J         &kp K            &kp L    &kp BR_SEMI   &kp C_VOLUME_DOWN
+&kp LSHFT  &kp A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H        &hm RCTRL J  &hm RSHFT K  &hm RALT L  &kp BR_SEMI   &kp C_VOLUME_DOWN
 &kp LCTRL  &kp Z  &kp X  &kp C           &kp V         &kp B        &kp N    &kp M         &kp COMMA        &kp DOT  &kp BR_SLASH  &kp RC(C_MUTE)
                          &lt 3 CAPSLOCK  &lt 1 ESCAPE  &kp SPACE    &kp RET  &lt 2 DELETE  &lt 6 BACKSPACE
             >;
@@ -200,19 +354,19 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         number_layer {
             bindings = <
-&trans            &kp EXCL       &kp AT_SIGN    &kp HASH       &kp DOLLAR            &kp PERCENT              &kp KP_ASTERISK  &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE  &trans
-&trans            &kp CARET      &kp AMPERSAND  &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PLUS         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS      &kp LEFT_BRACE
-&kp LEFT_BRACKET  &kp BACKSLASH  &kp PIPE       &kp LESS_THAN  &kp GREATER_THAN      &kp RIGHT_BRACKET        &kp KP_DOT       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &kp RIGHT_BRACE
-                                                &trans         &trans                &kp SPACE                &kp RET          &trans        &trans
+&trans            &kp BR_EXCL   &kp BR_AT    &kp BR_HASH   &kp BR_DLLR  &kp BR_PRCNT  &kp PLUS      &kp N7     &kp N8  &kp N9  &kp BR_BSLH  &trans
+&trans             &kp BR_GRAVE  &kp BR_AMPS  &kp BR_ASTRK  &kp BR_LPAR  &kp BR_RPAR   &kp MINUS     &kp N4     &kp N5  &kp N6  &kp COMMA &kp LEFT_BRACE
+&kp LEFT_BRACKET  &kp BR_UNDER  &kp BR_LBRC  &kp BR_RBRC   &kp BR_LT    &kp BR_GT     &kp BR_COLON  &kp N1     &kp N2  &kp N3  &kp BR_EQUAL &kp RIGHT_BRACE
+                                               &none         &none        &none         &kp BR_ASTRK  &kp BR_N0  &none
             >;
         };
 
         symbol_layer {
             bindings = <
-&trans        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4      &kp N5         &kp NUMBER_6   &kp N7           &kp N8        &kp N9                &kp N0                 &trans
-&trans        &kp EXCL       &kp AT_SIGN   &kp HASH       &kp DOLLAR        &kp PERCENT    &kp CARET      &kp AMPERSAND    &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F10
-&kp LEFT_ALT  &kp BACKSLASH  &kp PIPE      &kp LESS_THAN  &kp GREATER_THAN  &kp PLUS       &kp KP_DIVIDE  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS           &kp KP_MINUS           &kp F20
-                                           &trans         &trans            &kp SPACE      &kp RET        &trans           &trans
+&trans         &kp BR_ASTRK  &kp BR_AMPS  &kp BR_LBRC  &kp BR_RBRC  &kp BR_HASH  &kp BR_CIRC   &U_acute  &A_tilde  &O_tilde  &kp BR_CCED  &trans
+&trans         &kp BR_COLON  &kp BR_AT    &kp BR_LPAR  &kp BR_RPAR  &kp BR_DQT   &kp BR_ACUT   &I_acute  &A_acute  &O_acute  &E_acute  &kp F10
+&kp LEFT_ALT  &kp BR_EXCL   &kp PERCENT  &kp BR_LBKT  &kp BR_RBKT  &kp BR_PIPE  &kp BR_TILDE  &E_circ   &A_circ   &O_circ   &A_grave  &kp F20
+                                         &none        &none        &cao         &none         &none     &none
             >;
         };
 

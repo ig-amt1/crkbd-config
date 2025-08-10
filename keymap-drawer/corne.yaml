@@ -15,14 +15,14 @@ layers:
   - VOLUME UP
   - $$mdi:apple-keyboard-shift$$
   - A
-  - S
-  - D
-  - F
+  - '&hm LALT S'
+  - '&hm LSHFT D'
+  - '&hm LCTRL F'
   - G
   - H
-  - J
-  - K
-  - L
+  - '&hm RCTRL J'
+  - '&hm RSHFT K'
+  - '&hm RALT L'
   - /
   - VOLUME DOWN
   - $$mdi:apple-keyboard-control$$
@@ -45,90 +45,90 @@ layers:
   - {t: BACKSPACE, h: nav}
   number:
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - KP ASTERISK
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - +
   - '7'
   - '8'
   - '9'
-  - KP DIVIDE
+  - NUBS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ^
-  - AMPERSAND
-  - '*'
-  - (
-  - )
-  - +
+  - Sft+[
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Sft+0
+  - '-'
   - '4'
   - '5'
   - '6'
-  - '-'
+  - ','
   - '{'
   - '['
-  - \
-  - '|'
-  - <
-  - '>'
-  - ']'
-  - KP DOT
+  - Sft+-
+  - Sft+]
+  - Sft+\
+  - Sft+,
+  - Sft+.
+  - Sft+/
   - '1'
   - '2'
   - '3'
-  - '0'
+  - '='
   - '}'
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
-  - ␣
-  - ⏎
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - Sft+8
+  - '0'
+  - ''
   symbol:
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - Sft+8
+  - Sft+7
+  - Sft+]
+  - Sft+\
+  - Sft+3
+  - Sft+'
+  - {t: '&U_acute_down', s: '&U_acute_up'}
+  - {t: '&A_tilde_down', s: '&A_tilde_up'}
+  - {t: '&O_tilde_down', s: '&O_tilde_up'}
+  - ;
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - AMPERSAND
-  - '*'
-  - (
-  - )
+  - Sft+/
+  - Sft+2
+  - Sft+9
+  - Sft+0
+  - Sft+`
+  - '['
+  - {t: '&I_acute_down', s: '&I_acute_up'}
+  - {t: '&A_acute_down', s: '&A_acute_up'}
+  - {t: '&O_acute_down', s: '&O_acute_up'}
+  - {t: '&E_acute_down', s: '&E_acute_up'}
   - F10
   - LEFT ALT
+  - Sft+1
+  - '%'
+  - ']'
   - \
-  - '|'
-  - <
-  - '>'
-  - +
-  - KP DIVIDE
-  - KP ASTERISK
-  - KP EQUAL
-  - KP PLUS
-  - KP MINUS
+  - Sft+NUBS
+  - ''''
+  - {t: '&E_circ_down', s: '&E_circ_up'}
+  - {t: '&A_circ_down', s: '&A_circ_up'}
+  - {t: '&O_circ_down', s: '&O_circ_up'}
+  - {t: '&A_grave_down', s: '&A_grave_up'}
   - F20
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ␣
-  - ⏎
+  - ''
+  - ''
+  - '&cao'
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
   accent:
   - {t: ▽, type: trans}
   - ''
@@ -209,12 +209,12 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: function, h: toggle, type: held}
+  - {t: ▽, type: trans}
+  - {t: function, h: toggle}
   game:
   - ↹
   - Q
@@ -388,17 +388,84 @@ layers:
   - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
 combos:
-- p: [15, 16]
+- p: [34, 13, 12]
   k: {t: function, h: toggle}
   l: [base]
-- p: [11, 23, 35]
-  k: {t: game, h: toggle}
-  l: [base]
-- p: [41, 36]
-  k: function
-  l: [base]
-- p: [2, 3, 4]
+- p: [0, 1, 2, 3]
   k: '&close'
   l: [base]
-- p: [37, 40]
-  k: {t: infor, h: toggle}
+- p: [5, 4]
+  k: PRINTSCREEN
+  l: [base]
+- p: [22, 23, 24, 21]
+  k: Caps Word
+  l: [base]
+- p: [11, 12, 13]
+  k: Esc
+  l: [base]
+- p: [8, 9]
+  k: ⌦
+  l: [base]
+- p: [29, 28, 27]
+  k: Sft+INT1
+  l: [base]
+- p: [10, 11]
+  k: LEFT GUI
+  l: [base]
+- p: [19, 18]
+  k: RIGHT GUI
+  l: [base]
+- p: [6, 7, 8]
+  k: '&lock'
+  l: [game]
+- p: [23, 22]
+  k: '&copy'
+  l: [base]
+- p: [23, 24]
+  k: '&paste'
+  l: [base]
+- p: [0, 10]
+  k: '1'
+  l: [base]
+- p: [1, 11]
+  k: '2'
+  l: [base]
+- p: [2, 12]
+  k: '3'
+  l: [base]
+- p: [3, 13]
+  k: '4'
+  l: [base]
+- p: [4, 14]
+  k: '5'
+  l: [base]
+- p: [5, 15]
+  k: '6'
+  l: [base]
+- p: [6, 16]
+  k: '7'
+  l: [base]
+- p: [7, 17]
+  k: '8'
+  l: [base]
+- p: [8, 18]
+  k: '9'
+  l: [base]
+- p: [9, 19]
+  k: '0'
+  l: [base]
+- p: [33, 36]
+  k: {t: fgame, h: toggle}
+  l: [base]
+- p: [7, 8]
+  k: Sft+'
+  l: [base]
+- p: [17, 18]
+  k: '['
+  l: [base]
+- p: [28, 29]
+  k: ''''
+  l: [base]
+- p: [16, 17]
+  k: Sft+[
+  l: [base]
