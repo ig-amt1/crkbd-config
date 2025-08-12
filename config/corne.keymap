@@ -443,12 +443,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
             >;
         };
 
-
-
         fgame_layer {
             bindings = <
 &trans  &kp H   &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans  &kp LA(F4)
+&trans  &trans  &trans  &trans        &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
 &tog 4  &none   &to 0   &none         &kp O         &kp M           &trans  &trans  &trans  &trans  &trans  &to 0
                         &kp J         &kp I         &kp M           &trans  &trans  &trans
             >;

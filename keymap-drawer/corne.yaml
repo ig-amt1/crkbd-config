@@ -325,7 +325,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+F4
+  - {t: ▽, type: trans}
   - {t: function, h: toggle}
   - ''
   - {t: base, h: toggle}
