@@ -253,7 +253,7 @@ layers:
   - LEFT GUI
   - {t: game, h: toggle}
   - {t: M, h: LEFT ALT}
-  - {t: ESCAPE, h: MouseNav}
+  - {t: ESCAPE, h: fgame}
   - SPACE
   - {t: ▽, type: trans}
   - RIGHT WIN
@@ -301,49 +301,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  MouseNav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: function, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB3'
-  - {t: ▽, type: trans}
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP'
-  - '&mmv MOVE_RIGHT'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '&mkp MB4', type: held}
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
   fgame:
   - {t: ▽, type: trans}
   - H
@@ -382,7 +339,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: base, h: toggle}
   - J
-  - I
+  - {t: I, type: held}
   - M
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -446,7 +403,7 @@ combos:
   k: '0'
   l: [base]
 - p: [10, 22]
-  k: {t: MouseNav, h: toggle}
+  k: {t: fgame, h: toggle}
   l: [base]
 - p: [7, 6]
   k: Sft+SQT
