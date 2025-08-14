@@ -108,6 +108,47 @@ UNDEAD_KEY(grave, BR_GRAVE)
             label = "MOUSE_BEHAVIOR";
             #binding-cells = <1>;
         };
+
+        sticky: sticky {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY";
+            bindings = <&none>;
+            #binding-cells = <1>;
+            release-after-ms = <0>;
+        };
+
+        toggle_behavior: toggle_behavior {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TOGGLE_BEHAVIOR";
+            #binding-cells = <1>;
+        };
+
+        togkey_behavior: togkey_behavior {
+            compatible = "zmk,behavior-key-toggle";
+            label = "TOGKEY_BEHAVIOR";
+            #binding-cells = <1>;
+        };
+
+        encoder_behavior: encoder_behavior {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENCODER_BEHAVIOR";
+            #sensor-binding-cells = <2>;
+            bindings = <&none>, <&none>;
+        };
+
+        tap_behavior: tap_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&none>;
+        };
+
+        encoder1_behavior: encoder1_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER1_BEHAVIOR";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOL_DN>;
+        };
     };
 
     combos {
@@ -468,6 +509,15 @@ UNDEAD_KEY(grave, BR_GRAVE)
 &trans  &trans  &trans  &trans        &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
 &tog 4  &none   &to 0   &none         &kp O         &kp M           &trans  &trans  &trans  &trans  &trans  &to 0
                         &kp J         &kp I         &kp M           &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
