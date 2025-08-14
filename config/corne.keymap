@@ -102,6 +102,12 @@ UNDEAD_KEY(grave, BR_GRAVE)
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        mouse_behavior: mouse_behavior {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "MOUSE_BEHAVIOR";
+            #binding-cells = <1>;
+        };
     };
 
     combos {
