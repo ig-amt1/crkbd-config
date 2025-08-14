@@ -15,7 +15,6 @@
 #define FGAM 6
 #define ACCE 7
 
-
 AC_KEY(A_acute, BR_A, BR_ACUT)
 AC_KEY(A_grave, BR_A, BR_GRAVE)
 AC_KEY(A_tilde, BR_A, BR_TILDE)
@@ -375,6 +374,20 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
             label = "PASTE";
         };
+
+        tab: tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "TAB";
+        };
     };
 
     keymap {
@@ -436,9 +449,9 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         nav_layer {
             bindings = <
-&trans  &kp PG_UP  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC          &kp C_VOLUME_UP    &trans          &kp UP_ARROW  &trans     &trans    &caps_word
+&tab    &kp PG_UP  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RBRC          &kp C_VOLUME_UP    &trans          &kp UP_ARROW  &trans     &trans    &caps_word
 &trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS          &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &trans
-&tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &trans          &trans        &trans     &trans    &trans
+&tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE          &kp K_MUTE         &trans          &trans        &trans     &trans    &sk LEFT_GUI
                              &kp LPAR   &kp RPAR   &kp UNDERSCORE    &trans             &trans          &trans
             >;
         };

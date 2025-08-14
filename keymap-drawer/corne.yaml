@@ -259,7 +259,7 @@ layers:
   - RIGHT WIN
   - {t: ▽, type: trans}
   nav:
-  - {t: ▽, type: trans}
+  - '&tab'
   - PG UP
   - AMPS
   - ASTRK
@@ -294,7 +294,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: LEFT GUI, h: sticky}
   - LPAR
   - RPAR
   - UNDERSCORE
