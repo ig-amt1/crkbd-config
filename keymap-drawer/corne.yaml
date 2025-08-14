@@ -297,7 +297,7 @@ layers:
   - {t: LEFT GUI, h: sticky}
   - LPAR
   - RPAR
-  - UNDERSCORE
+  - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
