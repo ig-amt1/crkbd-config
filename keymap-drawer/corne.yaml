@@ -253,8 +253,8 @@ layers:
   - LEFT GUI
   - {t: game, h: toggle}
   - {t: M, h: LEFT ALT}
-  - {t: ESCAPE, h: fgame}
   - SPACE
+  - {t: ESCAPE, h: fgame}
   - {t: ▽, type: trans}
   - RIGHT WIN
   - {t: ▽, type: trans}
@@ -339,8 +339,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: base, h: toggle}
   - J
-  - {t: I, type: held}
-  - M
+  - I
+  - {t: M, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
