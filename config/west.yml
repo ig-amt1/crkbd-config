@@ -10,12 +10,3 @@ manifest:
   self:
     path: config
     
-manifest:
-  remotes:
-    - name: kot149
-      url-base: https://github.com/kot149
-  projects:
-    - name: zmk-battery-center
-      remote: kot149
-      revision: main
-      path: app/modules/battery_center
