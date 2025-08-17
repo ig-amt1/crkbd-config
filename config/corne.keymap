@@ -510,10 +510,10 @@ UNDEAD_KEY(grave, BR_GRAVE)
 
         nav_layer {
             bindings = <
-&tab    &kp PG_UP  &kp AMPS  &kp ASTRK  &kp HOME   &kp PG_UP    &kp C_VOLUME_UP    &trans          &kp UP_ARROW  &trans     &trans    &caps_word
-&trans  &kp PG_DN  &kp DLLR  &kp PRCNT  &kp END    &kp PG_DN    &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp LGUI  &trans
-&tog 6  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &new_tab     &kp K_MUTE         &trans          &trans        &trans     &trans    &sk LEFT_GUI
-                             &trans     &lt 4 END  &kp LALT     &trans             &trans          &trans
+&tab    &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1  &out OUT_TOG      &kp PG_UP    &kp C_VOLUME_UP    &trans             &kp UP_ARROW  &trans         &trans         &caps_word
+&trans  &bt BT_CLR_ALL  &kp PRINTSCREEN  &kp HOME      &kp END           &kp PG_DN    &kp C_VOLUME_DOWN  &kp LEFT_ARROW     &kp DOWN      &kp RIGHT      &kp LGUI       &trans
+&tog 6  &sk LEFT_GUI    &sk LALT         &sk LSHFT     &sk LEFT_CONTROL  &new_tab     &kp K_MUTE         &sk RIGHT_CONTROL  &sk RSHFT     &sk RIGHT_ALT  &sk RIGHT_WIN  &trans
+                                         &trans        &lt 4 END         &kp LALT     &trans             &trans             &trans
             >;
         };
 

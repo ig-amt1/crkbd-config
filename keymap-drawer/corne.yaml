@@ -260,10 +260,10 @@ layers:
   - {t: ▽, type: trans}
   nav:
   - '&tab'
-  - PG UP
-  - AMPS
-  - ASTRK
-  - HOME
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - OUT TOG
   - PG UP
   - VOLUME UP
   - {t: ▽, type: trans}
@@ -272,9 +272,9 @@ layers:
   - {t: ▽, type: trans}
   - Caps Word
   - {t: ▽, type: trans}
-  - PG DN
-  - DLLR
-  - PRCNT
+  - BT CLR ALL
+  - PRINTSCREEN
+  - HOME
   - END
   - PG DN
   - VOLUME DOWN
@@ -284,17 +284,17 @@ layers:
   - LGUI
   - {t: ▽, type: trans}
   - {t: nav, h: toggle}
-  - TILDE
-  - EXCL
-  - AT
-  - HASH
+  - {t: LEFT GUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - {t: LEFT CONTROL, h: sticky}
   - '&new_tab'
   - MUTE
+  - {t: RIGHT CONTROL, h: sticky}
+  - {t: RSHFT, h: sticky}
+  - {t: RIGHT ALT, h: sticky}
+  - {t: RIGHT WIN, h: sticky}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: LEFT GUI, h: sticky}
   - {t: ▽, type: trans}
   - {t: END, h: function}
   - LALT
