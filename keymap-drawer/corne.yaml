@@ -263,8 +263,8 @@ layers:
   - PG UP
   - AMPS
   - ASTRK
-  - LPAR
-  - RBRC
+  - HOME
+  - PG UP
   - VOLUME UP
   - {t: ▽, type: trans}
   - UP ARROW
@@ -275,8 +275,8 @@ layers:
   - PG DN
   - DLLR
   - PRCNT
-  - CARET
-  - PLUS
+  - END
+  - PG DN
   - VOLUME DOWN
   - LEFT ARROW
   - DOWN
@@ -288,15 +288,15 @@ layers:
   - EXCL
   - AT
   - HASH
-  - PIPE
+  - '&new_tab'
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: LEFT GUI, h: sticky}
-  - LPAR
-  - RPAR
+  - {t: ▽, type: trans}
+  - {t: END, h: function}
   - LALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
